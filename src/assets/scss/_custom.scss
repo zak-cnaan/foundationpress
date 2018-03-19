@@ -1,0 +1,31 @@
+// #wpadminbar{display: none;}
+// html {
+//   margin-top: 32px !important;
+// }
+
+#logo{
+  text-align: center;
+  display: block;
+  padding: 12px 0 18px;
+  a{
+    color: $primary-color;
+    font-size: 40px;
+    font-weight: 200;
+    
+    span{
+      color: $success-color;
+      font-weight: 800;
+      
+    }
+  }
+}
+
+#logo-header{
+  position: relative;
+  .menu-icon{
+    position: absolute !important;
+    top:40px;
+    right:1rem;
+    @include hamburger($color: $primary-color, $color-hover: $success-color);
+  }
+}
