@@ -30,11 +30,11 @@
 					</a>
 				</span>
 
-<button <?php foundationpress_title_bar_responsive_toggle(); ?> aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon dark" type="button" data-toggle="navigation"></button>
+<button <?php foundationpress_title_bar_responsive_toggle(); ?> aria-label="<?php _e( 'Main Menu', 'foundationpress' ); ?>" class="menu-icon dark" type="button" data-toggle="top-navigation"></button>
 				
-<nav class="site-navigation top-bar show-for-medium" data-toggler=".show-for-medium" role="navigation" id="navigation">
+<nav class="site-navigation top-bar-x show-for-medium" data-toggler=".show-for-medium" role="navigation" id="top-navigation">
 			<?php foundationpress_top_bar_r(); ?>
 	</nav>
 		
-
+<div class="missing">Ooops <span>how</span></div>
 	</header>

@@ -2,7 +2,14 @@
 // html {
 //   margin-top: 32px !important;
 // }
-
+.missing{
+  padding: 1rem;
+  background: $warning-color;
+  color:#fff;
+  span{
+    color: $success-color;
+  }
+}
 #logo{
   text-align: center;
   display: block;
@@ -27,5 +34,34 @@
     top:40px;
     right:1rem;
     @include hamburger($color: $primary-color, $color-hover: $success-color);
+  }
+}
+
+#top-navigation{
+  background: $primary-color;
+  ul{
+    margin:0;
+    padding: 6px;
+    text-align: center;
+    li{
+      text-align: center;
+      padding:2px;
+      @include breakpoint(medium) {
+        display: inline-block;
+      }
+      a{
+        color:#fff;
+        display: inline-block;
+        padding: 2px 12px 4px;
+        border-radius: 12px;
+
+       
+
+
+        &:hover{
+          background: $success-color;
+        }
+      }
+    }
   }
 }
